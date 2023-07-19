@@ -1,0 +1,344 @@
+<html>
+    <head>
+        <title>
+                TASK 2: STUDENT ENROLLMENT FORM
+        </title>
+    </head>   
+    <body>
+        <nav>
+            <div class="navbar-mainlogo">
+                <img class="navbar-n" src="https://cdn1.iconfinder.com/data/icons/capsocial/500/iconfinder-512.png" alt="logo">   
+            </div>
+            <div class="navbar-mainhead">
+                <h1><center>
+                    LGMVIP INTERNSHIP
+                </center></h1>
+            </div>
+            <div class="navbar-mainsocials">              
+                <a href="https://www.linkedin.com/in/kartikey-here/">  
+                    <img class="navbar-n" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square1-512.png" alt="linkedin">
+                </a>
+                <a href="https://www.instagram.com/kartikey_._here/">  
+                    <img class="navbar-n" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png" alt="ig">
+                </a>
+                <a href="https://twitter.com/kartikey_here">
+                    <img class="navbar-n" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png" alt="twitter">
+                </a>
+                <a href="https://www.reddit.com/user/cooolkits">
+                    <img class="navbar-n" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-reddit-square1-512.png" alt="reddit">
+                </a>
+            </div>
+        </nav>
+        <div class="main-outer">
+            <div class="main-partition pt1">
+                <form id="stud-form">
+                    <div class="main-mainhead">
+                        STUDENT ENROLLMENT FORM
+                    </div>
+                    <br>
+                    
+                    <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" id="name" name="name"  placeholder="Your Name Here"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" id="mail" name="name" placeholder="Your E-mail Here" ></td>
+                    </tr>
+                    <tr>
+                        <td>Website:</td>
+                        <td><input type="text" id="web" name="name" placeholder="Your Website Link Here"></td>
+                    </tr>
+                    <tr>
+                        <td>Image Link:</td>
+                        <td><input type="text" id="link" name="name" placeholder="Your Image Link Here" ></td>
+                    </tr>
+                    </table>
+                    <br>
+                    Gender:
+                    <input type="radio" id="o1" name="radio-group" value="Male">
+                    <label for="o1">Male</label>
+                    <input type="radio" id="o2" name="radio-group" value="Female">
+                    <label for="o2">Female</label>
+                    <input type="radio" id="o3" name="radio-group" value="Confused">
+                    <label for="o3">Confused</label>
+                        <br><br>
+                    Skills:
+                        <input type="checkbox" id="o4" name="checkbox-group" value="C">
+                        <label for="o4">C</label>
+                        <input type="checkbox" id="o5" name="checkbox-group" value="C++">
+                        <label for="o5">C++</label>
+                        <input type="checkbox" id="o6" name="checkbox-group" value="C#">
+                        <label for="o6">C#</label>
+                        <br><br>
+                        <div class="boton">
+                            <button class="button-boton" type="button" onclick="sub()">Submit</button>
+                        </div>
+                </form>
+            </div>
+            <div class="main-partition" >
+                <table id="suuu" class="tt">
+                    <tr class="trr"><td class="tdh1">Description</td><td class="tdh2">Image</td></tr>
+                
+                </table>
+            </div>
+        </div>
+    </body>
+    <style>
+        .button-boton{
+            
+            width: 50px;
+            height: 30px;
+        }
+        .boton{
+            display: grid;
+            place-items: center;
+        }
+        .tt{
+            align-items: center;
+            border: 1px solid white;
+        }
+        .tdh1 {
+            width :400px;
+            background-color: chartreuse;
+            border: 1px solid white;
+        }
+        .tdh2 {
+            
+            width :200px;
+            background-color: chartreuse;
+            border: 1px solid white;
+        }
+        .tdh3{
+            width :450px;
+            background-color: rgb(207, 238, 176);
+            font-size: 20px;
+            height: 150px;
+            border: 1px solid white;
+        }
+        .td2{
+            width: 200px;
+            background-color: rgb(207, 238, 176);
+            border: 1px solid white;
+        }
+        .piic{
+            padding-left: 30px;
+            width:150px;
+            height: 150px;
+            font-size: 20px;
+        }
+        .main-mainhead{
+            font-size: 25px;
+            display: grid;
+            place-items: center;
+            text-decoration: underline;
+            font-weight:bolder;
+            color: aliceblue;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        nav{
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #578c7b;
+            /*background-image: linear-gradient(to top, #3167b8, #82478b, #8f3352, #793622, #523d05);
+            */padding: 15px;
+            overflow: hidden;
+            align-items: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            /*border-radius: 15px;*/
+        }
+        .navbar-mainlogo{
+            padding-left: 35px;
+        }
+        .navbar-mainhead{
+            font-family: 'Roboto', sans-serif;
+            padding-left: 155px;
+            transition: transform 0.3s ease;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .navbar-mainhead:hover{
+            transform: scale(1.2);
+            /*color:chocolate;*/
+        }
+        .navbar-mainsocials{
+            padding: 15px;
+            padding-right: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar-n{
+            padding: 2px;
+            border-radius: 50%;
+            width:40px;
+            height:40px;
+            transition: transform 0.3s ease;
+        }
+        .navbar-n:hover{            
+            border-radius: 50%;
+            transform: scale(1.5);
+        }
+        .main-outer{
+            margin: 10px;
+            /*
+            
+            
+            
+            
+            
+            op
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+            height: 745px;
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            op
+            
+            
+            
+            
+            
+            
+            
+            */
+            padding: 10px;
+            background-color: pink;
+            align-items: center;
+            border-radius: 2%;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        .main-partition{
+            background-color: #6c6ae6;
+            border-radius: 2%;
+            width: 45%;
+            height: 90%;
+            padding: 10px;
+        }
+        .pt1{
+            font-size: 30px;
+        }
+        input{
+            border-radius: 2%;
+            padding: 1%;
+        }
+        td{
+            font-size: 30px;
+            padding: 7px;
+            padding-right: 30px;
+        }
+        .alien{
+            padding: 7px;
+        }
+    </style>
+    <script>   
+    function sub(){
+            var n=document.getElementById('name').value.trim();
+            if(n=='')
+                n='n/a';
+            var e=document.getElementById('mail').value.trim();
+            if(e=='')
+                e='n/a';
+            var w=document.getElementById('web').value.trim();
+            if(w=='')
+                w='n/a';
+            var i=document.getElementById('link').value.trim();
+            if(i=='')
+                i='https://i.pinimg.com/originals/83/bc/8b/83bc8b88cf6bc4b4e04d153a418cde62.jpg';
+            var g=radioo();
+            var s=getSelectedValues();
+            showiii(n,e,w,i,g,s);
+    }
+    function getSelectedValues() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var oot='Skills: ';
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                oot+=checkbox.value+', ';
+            }
+        });
+        if(oot==='Skills: ')
+            oot+= 'n/a';
+        else
+            oot=oot.slice(0, -2);
+        return oot;
+    }
+    function radioo() {
+            var selectedRadio = document.querySelector('input[name="radio-group"]:checked');
+            if (selectedRadio) {
+                return selectedRadio.value.toUpperCase();
+            } 
+            else {
+                return 'n/a';
+            }
+        }
+    function showiii(n,e,w,i,g,s)   {
+            var element = document.getElementById("suuu");
+            var existingContent = element.innerHTML;
+            //n='Kartikey Gupta';
+            //g='M';
+            //e='wtakartikey@gmail.com';
+            //w='bombastickk.infintyfreeapp.com';
+            //s='C, C++';
+            //i='https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg'
+            var x='<tr class="trr"><td class="tdh3">'+n+'<br>'+g+'<br>'+e+'<br>'+w+'<br>'+s+'</td><td class=td2><img onerror="loadDefaultImage()" class="piic" src="'+i+'" alt="'+n+'"</td></tr>'
+            var newContent = existingContent + x;
+            element.innerHTML = newContent;
+            var form = document.getElementById("stud-form");
+            form.reset();
+        }
+        function loadDefaultImage() {
+            var image = event.target; // Get the <img> element that triggered the error
+            image.src = "https://i.pinimg.com/originals/83/bc/8b/83bc8b88cf6bc4b4e04d153a418cde62.jpg"; // Set the source of the image to the default image
+            image.alt = "Default Image"; // Set alternative text for the default image
+        }
+    </script>
+</html>
